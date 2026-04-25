@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_oil_theme" model="ir.ui.view">
+        <field name="name">res.config.settings.view.oil.theme</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="Oil Backend Theme" name="oil_backend_theme"
+                     groups="base.group_system">
+                    <block title="Branding">
+                        <setting string="Brand Name"
+                                 help="Name shown in the top navigation bar (default: Oil ERP).">
+                            <field name="oil_brand_name" placeholder="Oil ERP"/>
+                        </setting>
+                        <setting string="Brand Icon"
+                                 help="Bootstrap icon name without 'bi-' prefix. Examples: droplet-fill, globe, fire, gear-fill, building. Browse all at icons.getbootstrap.com">
+                            <field name="oil_brand_icon" placeholder="droplet-fill"/>
+                        </setting>
+                        <setting string="Primary Color"
+                                 help="Hex color code for the main accent color (default: #FF6A00).">
+                            <field name="oil_theme_color" placeholder="#FF6A00"/>
+                        </setting>
+                    </block>
+                    <block title="Apply Changes">
+                        <div class="text-muted" style="padding: 8px 0;">
+                            <i class="fa fa-info-circle me-1"/>
+                            After saving, <strong>reload the page (F5)</strong> to apply the updated theme.
+                        </div>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

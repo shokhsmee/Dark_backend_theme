@@ -1,0 +1,20 @@
+<templates xml:space="preserve">
+    <t t-name="oil_backend_theme.ColorPickerField">
+        <div class="d-flex align-items-center gap-2">
+            <input type="color"
+                   t-att-value="value"
+                   t-on-input="onInput"
+                   class="form-control form-control-color"
+                   style="width: 48px; height: 36px; padding: 2px 4px; cursor: pointer; border-radius: 6px;"/>
+            <input type="text"
+                   t-att-value="value"
+                   t-on-input="onTextInput"
+                   maxlength="7"
+                   class="form-control"
+                   style="width: 100px; font-family: monospace;"
+                   placeholder="#FF6A00"/>
+            <span class="rounded"
+                  t-att-style="'display:inline-block; width:28px; height:28px; background:' + value + '; border:1px solid #ccc;'"/>
+        </div>
+    </t>
+</templates>
