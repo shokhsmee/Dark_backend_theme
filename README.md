@@ -31,7 +31,7 @@ A fully standalone backend theme for Odoo 19 Community. Dark navy + industrial o
 ### 1. Copy the addon
 
 ```bash
-cp -r oil_backend_theme /your/odoo/extra-addons/
+cp -r dark_backend_theme /your/odoo/extra-addons/
 ```
 
 ### 2. Restart Odoo
@@ -47,7 +47,7 @@ Go to **Settings → Apps**, search for **Dark Backend Theme**, and click **Inst
 ### 4. Or install via CLI
 
 ```bash
-python odoo-bin -c odoo.conf -d your_database -i oil_backend_theme --stop-after-init
+python odoo-bin -c odoo.conf -d your_database -i dark_backend_theme --stop-after-init
 ```
 
 ---
@@ -83,7 +83,7 @@ Browse the full icon list at [icons.getbootstrap.com](https://icons.getbootstrap
 ## File Structure
 
 ```
-oil_backend_theme/
+dark_backend_theme/
 ├── __init__.py
 ├── __manifest__.py
 ├── models/
